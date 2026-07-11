@@ -4,366 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Riviera Tech Co. is Santa Barbara's only MSP offering business IT support, kids' internet safety, and senior &amp; elderly tech support for aging parents. One relationship, three problems solved.">
+    <meta name="description" content="Riviera Tech Co. is a Santa Barbara MSP offering business IT support, kids' internet safety, and senior &amp; elderly tech support for aging parents. One relationship, three problems solved.">
     <meta name="keywords" content="senior tech support Santa Barbara, elderly tech support, IT support for seniors, aging parent tech help, managed IT services Santa Barbara, small business IT support, kids internet safety, family tech support">
     <link rel="canonical" href="https://www.rivtechco.com/">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Riviera Tech Co. | Santa Barbara IT Support for Your Business & Family">
-    <meta property="og:description" content="Santa Barbara's only MSP offering business IT support, kids' internet safety, and senior & elderly tech support for aging parents. One relationship, three problems solved.">
+    <meta property="og:description" content="Santa Barbara MSP offering business IT support, kids' internet safety, and senior & elderly tech support for aging parents. One relationship, three problems solved.">
     <meta property="og:url" content="https://www.rivtechco.com/">
     <meta property="og:image" content="https://www.rivtechco.com/logo.jpg">
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Riviera Tech Co. | Santa Barbara IT Support for Your Business & Family">
-    <meta name="twitter:description" content="Santa Barbara's only MSP offering business IT support, kids' internet safety, and senior & elderly tech support for aging parents.">
+    <meta name="twitter:description" content="Santa Barbara MSP offering business IT support, kids' internet safety, and senior & elderly tech support for aging parents.">
     <link rel="icon" type="image/jpg" href="logo.jpg">
     <title>Riviera Tech Co. | Santa Barbara IT Support for Your Business & Family</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header */
-        header {
-            background: #1a4d80;
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        
-        .logo img {
-            height: 50px;
-            width: 50px;
-            object-fit: cover;
-            border-radius: 50%;
-            box-shadow: 0 0 0 2px rgba(255,255,255,0.25);
-        }
-        
-        .header-contact {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        
-        .phone {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: white;
-            text-decoration: none;
-        }
-        
-        .cta-button {
-            background: #ff6b35;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background 0.3s;
-        }
-        
-        .cta-button:hover {
-            background: #e55a2b;
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #1a4d80 0%, #2d6ba8 100%);
-            color: white;
-            padding: 5rem 0;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-        
-        .hero .tagline {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            font-weight: 300;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        /* Three Problems Section */
-        .problems {
-            padding: 4rem 0;
-            background: #f8f9fa;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 3rem;
-            color: #1a4d80;
-        }
-        
-        .problems-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .problem-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        
-        .problem-card h3 {
-            color: #1a4d80;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .problem-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        
-        /* How It Works */
-        .how-it-works {
-            padding: 4rem 0;
-        }
-        
-        .features-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .feature {
-            padding: 1.5rem;
-        }
-        
-        .feature h4 {
-            color: #1a4d80;
-            margin-bottom: 0.5rem;
-        }
-        
-        /* Pricing */
-        .pricing {
-            padding: 4rem 0;
-            background: #f8f9fa;
-            text-align: center;
-        }
-        
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem auto;
-            max-width: 1200px;
-        }
-        
-        .price-box {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        
-        .price-box:hover {
-            transform: translateY(-5px);
-        }
-        
-        .price-box.featured {
-            border: 2px solid #1a4d80;
-            position: relative;
-        }
-        
-        .featured-tag {
-            position: absolute;
-            top: -15px;
-            right: 20px;
-            background: #ff6b35;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
-        
-        .tier-name {
-            color: #1a4d80;
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-        
-        .price {
-            font-size: 2.5rem;
-            color: #1a4d80;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-        
-        .price-details {
-            font-size: 1rem;
-            color: #666;
-            flex-grow: 1;
-        }
-        
-        .price-details ul {
-            list-style: none;
-            padding: 0;
-            margin: 1rem 0;
-            text-align: left;
-        }
-        
-        .price-details li {
-            margin: 0.5rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-        
-        .price-details li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #1a4d80;
-        }
-        
-        .price-details .target {
-            font-style: italic;
-            color: #888;
-            margin-top: 1rem;
-        }
-        
-        @media (max-width: 768px) {
-            .pricing-grid {
-                grid-template-columns: 1fr;
-                padding: 0 1rem;
-            }
-            
-            .price-box {
-                margin-bottom: 2rem;
-            }
-        }
-            margin-bottom: 2rem;
-        }
-        
-        /* Why Choose Us */
-        .why-us {
-            padding: 4rem 0;
-        }
-        
-        .why-us-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .why-card {
-            padding: 1.5rem;
-        }
-        
-        .why-card h3 {
-            color: #1a4d80;
-            margin-bottom: 1rem;
-        }
-        
-        /* Contact */
-        .contact {
-            padding: 4rem 0;
-            background: #1a4d80;
-            color: white;
-            text-align: center;
-        }
-        
-        .contact h2 {
-            margin-bottom: 2rem;
-        }
-        
-        .contact-info {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        
-        /* Footer */
-        footer {
-            background: #0f2c4a;
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .hero .tagline {
-                font-size: 1.2rem;
-            }
-            
-            .header-contact {
-                flex-direction: column;
-                gap: 1rem;
-                width: 100%;
-                margin-top: 1rem;
-            }
-            
-            .problems-grid,
-            .features-list,
-            .why-us-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -373,7 +29,7 @@
       "url": "https://www.rivtechco.com/",
       "telephone": "+18055195951",
       "image": "https://www.rivtechco.com/logo.jpg",
-      "priceRange": "$350-$850",
+      "priceRange": "$125-$850",
       "areaServed": [
         {"@type": "City", "name": "Santa Barbara"},
         {"@type": "City", "name": "Goleta"},
@@ -416,7 +72,7 @@
         <div class="container">
             <h1>One Relationship.<br>Three Problems Solved.</h1>
             <p class="tagline">IT for your business. Safety for your kids. Support for your parents.</p>
-            <p>Santa Barbara's only MSP that handles your office technology, your children's internet safety, and your aging parents' tech support—all in one monthly service.</p>
+            <p>Santa Barbara's MSP for your office technology, your children's internet safety, and your aging parents' tech support—as a monthly plan or a single visit, whichever fits.</p>
             <a href="#contact" class="cta-button" style="display: inline-block; margin-top: 1rem;">Schedule a Consultation</a>
         </div>
     </section>
@@ -437,11 +93,60 @@
                     <p>Internet safety consultation, parental controls, device management, and age-appropriate security education. Sleep better knowing your kids are protected online.</p>
                 </div>
                 <div class="problem-card">
-                    <div class="problem-icon">👴</div>
+                    <div class="problem-icon">🧓</div>
                     <h3>Senior &amp; Elderly Tech Support</h3>
                     <p>Patient senior tech support for aging parents and elderly loved ones. Security issues, social media problems, basic troubleshooting—explained clearly, as many times as needed.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Senior & Elderly Services -->
+    <section class="senior-services" id="senior-tech-support">
+        <div class="container">
+            <h2 class="section-title">Senior &amp; Elderly Tech Support in Santa Barbara</h2>
+            <p class="senior-intro">
+                Patient, judgment-free tech help for older adults and aging parents — explained clearly, at your pace, for as long as it takes to feel confident.
+                <br>
+                <span class="senior-stat">73% of adults 65+ say they need help using a new device — <a href="https://www.pewresearch.org/internet/2017/05/17/technology-use-among-seniors/" target="_blank" rel="noopener">Pew Research Center</a></span>
+                <span class="senior-stat">1 in 4 Californians will be 60+ by 2030 — <a href="https://aging.ca.gov/Newsroom/Press_Release/January3025/" target="_blank" rel="noopener">CA Dept. of Aging</a></span>
+            </p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Smartphone &amp; Tablet Help</h3>
+                    <p>Setup, apps, texting, photos, and getting comfortable with day-to-day use — on your own device, at your own pace.</p>
+                    <a class="learn-more" href="senior-smartphone-tablet-help.html">Learn more &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📶</div>
+                    <h3>Wi-Fi, Email &amp; Internet Setup</h3>
+                    <p>Get connected and stay connected — router setup, email that actually works, and troubleshooting when it doesn't.</p>
+                    <a class="learn-more" href="senior-wifi-email-setup.html">Learn more &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Password, Privacy &amp; Scam Protection</h3>
+                    <p>Secure passwords, spotting scams and phishing attempts, and locking down accounts so you can browse with confidence.</p>
+                    <a class="learn-more" href="senior-password-scam-protection.html">Learn more &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📺</div>
+                    <h3>Streaming, Smart TV &amp; Sonos</h3>
+                    <p>Set up Netflix, YouTube, and your favorite shows on a smart TV or streaming device, plus Sonos and multi-room audio — no remote-control confusion, no in-wall wiring.</p>
+                    <a class="learn-more" href="senior-streaming-smart-tv-help.html">Learn more &rarr;</a>
+                </div>
+            </div>
+
+            <details class="free-resources">
+                <summary>Free &amp; low-cost help is also available</summary>
+                <p>If a paid visit isn't the right fit right now, these organizations offer free or low-cost tech support for seniors:</p>
+                <ul>
+                    <li><strong>Central Coast Commission for Senior Citizens</strong> (Area Agency on Aging for Santa Barbara County) — <a href="tel:8059259554">(805) 925-9554</a> — free tech help programs and referrals for qualifying seniors. <a href="https://centralcoastseniors.org/" target="_blank" rel="noopener">centralcoastseniors.org</a></li>
+                    <li><strong>Cyber-Seniors</strong> — <a href="tel:18442173057">1-844-217-3057</a> — free one-on-one tech help and webinars, nationwide. <a href="https://cyberseniors.org/" target="_blank" rel="noopener">cyberseniors.org</a></li>
+                    <li><strong>FCC Lifeline Program</strong> — a monthly discount on phone or internet service for qualifying low-income households. <a href="https://www.fcc.gov/lifeline-consumers" target="_blank" rel="noopener">fcc.gov/lifeline</a></li>
+                </ul>
+            </details>
         </div>
     </section>
 
@@ -467,6 +172,10 @@
                     <p>Security issue resolution, social media account recovery, device setup & patient training</p>
                 </div>
                 <div class="feature">
+                    <h4>✓ Smart Home &amp; Audio Setup</h4>
+                    <p>Sonos and multi-room audio setup, smart speakers, and wireless home entertainment — no electrical or in-wall wiring work.</p>
+                </div>
+                <div class="feature">
                     <h4>✓ Proactive Monitoring</h4>
                     <p>We catch problems before they happen.</p>
                 </div>
@@ -479,7 +188,7 @@
     </section>
 
     <!-- Pricing -->
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <div class="container">
             <h2 class="section-title">Simple, Predictable Pricing</h2>
             <div class="pricing-grid">
@@ -543,6 +252,25 @@
                     </div>
                     <a href="#contact" class="cta-button">Get Started</a>
                 </div>
+
+                <!-- Senior Tech Help - Single Visit -->
+                <div class="price-box">
+                    <div>
+                        <h3 class="tier-name">Senior Tech Help</h3>
+                        <div class="price">$125/hour</div>
+                        <div class="price-details">
+                            <ul>
+                                <li>1-hour minimum, no contract</li>
+                                <li>In-home or remote support</li>
+                                <li>Smartphone, tablet &amp; computer help</li>
+                                <li>Scam &amp; password protection</li>
+                                <li>Patient, one-on-one training</li>
+                            </ul>
+                            <p class="target">For: A one-time visit or occasional help — no monthly plan needed</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="cta-button">Get Started</a>
+                </div>
             </div>
         </div>
     </section>
@@ -568,6 +296,23 @@
         </div>
     </section>
 
+    <!-- Founder Bio -->
+    <section class="founder-bio">
+        <div class="container">
+            <h2 class="section-title">Meet Joshua, Your Local Tech Ally</h2>
+            <div class="bio-wrap">
+                <div class="bio-photo-placeholder">JT</div>
+                <div class="bio-text">
+                    <h3>Joshua Trimmell, Founder</h3>
+                    <p>Joshua founded Riviera Tech Co. in 2024 after two decades of hands-on technology experience — from managing enterprise accounts at companies like Yardi Systems to running network operations as an MSP engineer and overseeing HIPAA-compliant systems as an IT Director. He holds a B.S. in Telecommunications &amp; Management.</p>
+                    <p>His connection to senior tech support goes back further than his career, though. Joshua grew up around his mom's beauty shop, surrounded by her regulars — mostly women in their 70s, 80s, and 90s who welcomed a curious kid into their conversations. People have always told him he's an "old soul," and he's been comfortable around older folks ever since. These days that shows up in a practical way, too: helping his own parents navigate the tech that increasingly runs daily life.</p>
+                    <p>That's the philosophy behind Riviera Tech Co.'s senior support — patient, unhurried, and judgment-free. If it takes explaining something three different ways to get you comfortable with your phone or laptop, that's just part of the job.</p>
+                    <p class="bio-credentials">B.S. Telecommunications &amp; Management &middot; Former Technical Account Manager, Yardi Systems &middot; Former IT Director, Obran Cooperative &middot; Santa Barbara, CA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
@@ -583,7 +328,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Riviera Tech Co. | Santa Barbara, CA | (805) 519-5951</p>
+            <p>&copy; 2024&ndash;2026 Riviera Tech Co. | Santa Barbara, CA | (805) 519-5951</p>
             <p style="margin-top: 0.5rem; font-size: 0.9rem;">Managed IT Services • Family Technology Management • Local Support You Can Trust</p>
         </div>
     </footer>
